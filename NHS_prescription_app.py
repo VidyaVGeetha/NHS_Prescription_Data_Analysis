@@ -59,7 +59,7 @@ API_URL = (
 
 # 👇 Adjust this path: place your Scottish Health Board GeoJSON here.
 # The GeoJSON should have a property (e.g. HBCode) that matches HealthBoard codes in the data.
-GEOJSON_PATH = "scottish_health_boards.geojson"  # put this file in the same folder as the app
+GEOJSON_PATH = "query.json"  # put this file in the same folder as the app
 
 
 # --------------------------------
