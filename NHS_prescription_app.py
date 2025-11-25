@@ -1,22 +1,17 @@
-# Step 1: Import required libraries
-import streamlit as st      # Import Streamlit (for building the interactive app)
-import pandas as pd         # Import Pandas (Data Processing & Analysis)
-import plotly.express as px  # Import Plotly Express (Data Visualization)
+import streamlit as st
+import pandas as pd
 
-# Step 2: Page configuration 
-# (Streamlit Page Settings (Title, Icon, Layout)
-#(This block of code controls how your Streamlit web page looks when it opens.)
+st.title("Sample Data – No CSV Used")
 
-st.set_page_config(
-    page_title="NHS Scotland Prescription Dashboard – Aug 2025",
-    page_icon="💊",
-    layout="wide"
-)
+# Create a small sample dataset manually
+data = {
+    "Drug_Name": ["Paracetamol", "Ibuprofen", "Amoxicillin", "Metformin"],
+    "Quantity": [120, 95, 60, 150],
+    "Cost": [45.50, 38.20, 62.10, 55.00],
+    "Month": ["Aug 2025", "Aug 2025", "Aug 2025", "Aug 2025"]
+}
 
-# Step 3: Load Data
-@st.cache_data    #.................special tag) used by Streamlit for cache.
-def load_data():  #.................defines a function called load_data.   
-      
+df = pd.DataFrame(data)
 
-
-
+st.subheader("📊 Sample Data Preview (Hard-coded)")
+st.dataframe(df)
