@@ -1,0 +1,2 @@
+key_on_field = "feature.properties.<your_code_field>"
+fields=["<your_name_field>"]
