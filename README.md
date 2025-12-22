@@ -1,4 +1,6 @@
 # NHS Prescription Data Analysis (Scotland) 📊💊
+![NHS Prescription Data Analysis (Scotland)](https://raw.githubusercontent.com/VidyaVGeetha/NHS_Prescription_Data_Analysis/main/NHS%20Prescription%20Data%20Analysis%20(Scotland).png)
+
 
 This project explores **NHS prescription data** and presents insights through:
 - A **Jupyter Notebook analysis** (EDA + charts)
